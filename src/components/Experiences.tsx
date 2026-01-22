@@ -60,7 +60,7 @@ const skills = [
 
 const Experiences = () => {
   return (
-    <div className=" p-10 mb-10 md:mb-0">
+    <div className=" p-10 mb-10 md:mb-0" id="experiences">
       <Title title="Experiences" />
       <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-4">
         <div className="flex flex-wrap justify-center gap-4 items-center md:w-1/3 mt-4 md:mt-0">

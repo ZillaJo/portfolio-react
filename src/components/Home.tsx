@@ -3,7 +3,7 @@ import img from "../assets/jo.png";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <div className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10">
         <div className="flex flex-col">
           <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left mt-4 md:mt-0">
@@ -21,7 +21,7 @@ const Home = () => {
           <img
             src={img}
             alt="Jonathan Mdh"
-            className="w-80 h-90 object-cover border-8 border-accent shadow-xl md:w-85 md:h-100"
+            className="w-80 h-90 object-cover mt-10 border-8 border-accent shadow-xl md:w-85 md:h-100"
             style={{
                 borderRadius: "51% 49% 48% 52% / 35% 35% 65% 65%"
             }}

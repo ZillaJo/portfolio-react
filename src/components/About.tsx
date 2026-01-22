@@ -31,7 +31,7 @@ const aboutSection = [
 
 const About = () => {
   return (
-    <div className="bg-base-300 p-10 mb-10 md:mb-0">
+    <div className="bg-base-300 p-10 mb-10 md:mb-0" id="about">
       <Title title="About Me" />
       <div className=" flex justify-center items-center gap-10 flex-col md:flex-row">
         <div className="hidden md:block mr-10 md:w-1/3">

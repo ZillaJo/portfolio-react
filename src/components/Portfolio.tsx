@@ -62,15 +62,15 @@ const projects = [
     demoLink: "#",
     repoLink: "#",
     image: img6,
-  }
+  },
 ];
 
 const Portfolio = () => {
   return (
-    <div className="">
+    <div className="" id="portfolio">
       <Title title="Portfolio" />
       <div className="grid md:grid-cols-3 gap-6">
-        {projects.map((project) => (
+        {projects.map((project,idx) => (
           <div
             key={project.id}
             className="bg-base-300 p-5 h-fit rounded-xl shadow-2xl"
@@ -81,39 +81,31 @@ const Portfolio = () => {
               className="rounded-xl w-full h-56 object-cover"
             />
             <div>
-                <h1 className="text-xl font-bold my-2">
-                    {project.title}
-                </h1>
-                <p className="text-sm">
-                    {project.description}
-                </p>
+              <h1 className="text-xl font-bold my-2">{project.title}</h1>
+              <p className="text-sm">{project.description}</p>
             </div>
             <div className="flex flex-wrap gap-2 my-2">
-                {project.technologies.map((tech) => (
-                    <span 
-                        className="badge badge-accent badge-sm"
-                    >
-                        {tech}
-                    </span>
-                ))}
+              {project.technologies.map((tech,index) => (
+                <span key={index} className="badge badge-accent badge-sm">{tech}</span>
+              ))}
             </div>
             <div className="flex gap-2 mt-4 justify-center">
-                <a 
-                    href={project.demoLink} 
-                    className="btn btn-primary w-2/3 "
-                    target="_blank"
-                >
-                    Live Demo
-                    <Video className="w-5" />
-                </a>
-                <a 
-                    href={project.repoLink} 
-                    className="btn btn-neutral w-1/3"
-                    target="_blank"
-                >
-                   Code
-                    <Github className="w-5" />
-                </a>
+              <a
+                href={project.demoLink}
+                className="btn bg-[#E0A15E] text-[#150C0C] w-2/3 "
+                target="_blank"
+              >
+                Live Demo
+                <Video className="w-5" />
+              </a>
+              <a
+                href={project.repoLink}
+                className="btn btn-neutral w-1/3"
+                target="_blank"
+              >
+                Code
+                <Github className="w-5" />
+              </a>
             </div>
           </div>
         ))}

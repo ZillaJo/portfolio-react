@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Contact: React.FC = () => {
   return (
-    <div className="bg-base-300 py-16 px-4">
+    <div className="bg-base-300 py-16 px-4" id="contact">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
@@ -116,7 +116,7 @@ const Contact: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center shadow-2xl gap-2 bg-accent text-white font-semibold py-3 rounded-xl hover:bg-accent-focus transition"
+                className="w-full flex items-center justify-center shadow-2xl gap-2 bg-[#E0A15E] text-[#150C0C] font-semibold py-3 rounded-xl hover:bg-accent-focus transition"
               >
                 <Send size={18} />
                 Send Message

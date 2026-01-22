@@ -3,3 +3,7 @@
 @plugin "daisyui" {
   themes: all;
 }
+
+#submit {
+  color : 150C0C;
+}
