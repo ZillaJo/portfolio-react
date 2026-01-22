@@ -11,48 +11,34 @@ import imgNext from "../assets/techno/next-js.webp";
 import imgNode from "../assets/techno/node-js.png";
 
 const skills = [
+  
   {
     id: 1,
-    name: "HTML",
-    Image: imgHTML,
-  },
-  {
-    id: 2,
-    name: "CSS",
-    Image: imgCSS,
-  },
-  {
-    id: 3,
-    name: "JavaScript",
-    Image: imgJS,
-  },
-  {
-    id: 4,
     name: "TypeScript",
     Image: imgTS,
   },
   {
-    id: 5,
+    id: 2,
     name: "React",
     Image: imgReact,
   },
   {
-    id: 6,
+    id: 3,
     name: "Tailwind CSS",
     Image: imgTail,
   },
   {
-    id: 7,
+    id: 4,
     name: "Next.js",
     Image: imgNext,
   },
   {
-    id: 8,
+    id: 5,
     name: "Git",
     Image: imgGit,
   },
   {
-    id: 9,
+    id: 6,
     name: "Node-js",
     Image: imgNode,
   },
@@ -86,7 +72,7 @@ const Experiences = () => {
             I Work Hard to improve My Skills Regularly in :
           </h2>
           <p className="text-center text-sm md:text-base">
-            HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS,
+            TypeScript, React, Next.js, Tailwind CSS,
             Node.js, Express.js, MongoDB, Git, GitHub, Responsive
             Web Design, Agile Methodologies.
           </p>

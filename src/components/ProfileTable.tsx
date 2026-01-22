@@ -2,9 +2,9 @@ import { User, GraduationCap, BarChart3, Phone, Briefcase } from "lucide-react";
 
 const profileData = [
   { label: "Full Name", value: "Jonathan Mdh", icon: User },
-  { label: "Degree", value: "Computer Science", icon: GraduationCap },
+  { label: "Degree", value: "Bachelor", icon: GraduationCap },
   { label: "Level", value: "Fullstack Developer", icon: BarChart3 },
-  { label: "Phone", value: "+250 7xx xxx xxx", icon: Phone },
+  { label: "Phone", value: "+250 788 635 875", icon: Phone },
   { label: "Freelance", value: "Available", icon: Briefcase },
 ];
 
