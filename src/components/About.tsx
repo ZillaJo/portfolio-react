@@ -31,18 +31,18 @@ const aboutSection = [
 
 const About = () => {
   return (
-    <div className="bg-base-300 p-10 mb-10 md:mb-32">
+    <div className="bg-base-300 p-10 mb-10 md:mb-0">
       <Title title="About Me" />
-      <div className="md:h-screen flex justify-center items-center">
-        <div className="hidden md:block mr-10">
+      <div className=" flex justify-center items-center gap-10 flex-col md:flex-row">
+        <div className="hidden md:block mr-10 md:w-1/3">
           <img
             src={img}
             alt="Jonathan Mdh"
-            className="w-220 object-cover rounded-xl"
+            className=" object-cover rounded-xl"
           />
         </div>
 
-        <div className="md:ml-4 space-y-6">
+        <div className="md:ml-4 space-y-5 md:w-2/3">
           {aboutSection.map((section) => (
             <div
               key={section.id}
