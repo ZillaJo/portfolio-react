@@ -1,8 +1,4 @@
 import Title from "./Title";
-
-import imgHTML from "../assets/techno/html.png";
-import imgCSS from "../assets/techno/css.png";
-import imgJS from "../assets/techno/js.png";
 import imgTS from "../assets/techno/typescript.svg";
 import imgReact from "../assets/techno/react.png";
 import imgTail from "../assets/techno/tailwind.png";
