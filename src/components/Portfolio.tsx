@@ -70,7 +70,7 @@ const Portfolio = () => {
     <div className="" id="portfolio">
       <Title title="Portfolio" />
       <div className="grid md:grid-cols-3 gap-6">
-        {projects.map((project,idx) => (
+        {projects.map((project) => (
           <div
             key={project.id}
             className="bg-base-300 p-5 h-fit rounded-xl shadow-2xl"
