@@ -13,7 +13,7 @@ const Home = () => {
           <p className="my-4 text-md text-center md:text-left mt-4">
             I'm a fullstack software developer
           </p>
-          <a href="" className="btn btn-accent md:w-fit">
+          <a href="#contact" className="btn btn-accent md:w-fit">
             <Mail className="w-5 h-5" /> Contact Me
           </a>
         </div>
