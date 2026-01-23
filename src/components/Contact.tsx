@@ -1,4 +1,12 @@
-import { Loader, Mail, MapPinned, Phone, Send } from "lucide-react";
+import {
+  Loader,
+  Mail,
+  MapPinned,
+  Phone,
+  Send,
+  CheckCircle,
+  AlertTriangle,
+} from "lucide-react";
 import Title from "./Title";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -107,19 +115,6 @@ const Contact: React.FC = () => {
 
           {/* Form */}
           <div className="bg-base-100 rounded-2xl shadow-2xl p-8">
-            {/* Alert */}
-            {alert && (
-              <div
-                className={`mb-6 rounded-xl px-4 py-3 text-sm font-medium ${
-                  alert.type === "success"
-                    ? "bg-green-100 text-green-700"
-                    : "bg-red-100 text-red-700"
-                }`}
-              >
-                {alert.message}
-              </div>
-            )}
-
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -198,6 +193,22 @@ const Contact: React.FC = () => {
                   className="w-full rounded-xl border border-base-300 shadow-2xl px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-accent"
                 />
               </div>
+
+              {/* Alert message */}
+              {alert && (
+                <div
+                  className={`mb-5 flex items-center gap-2 text-sm font-medium ${
+                    alert.type === "success" ? "text-green-600" : "text-red-600"
+                  }`}
+                >
+                  {alert.type === "success" ? (
+                    <CheckCircle size={18} />
+                  ) : (
+                    <AlertTriangle size={18} />
+                  )}
+                  <span>{alert.message}</span>
+                </div>
+              )}
 
               <button
                 type="submit"
